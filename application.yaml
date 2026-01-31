@@ -7,12 +7,6 @@ eureka:
     instance-id: ${spring.application.name}:${random.value}
 
 management:
-  tracing:
-    sampling:
-      probability: 1.0
-  zipkin:
-    tracing:
-      endpoint: http://localhost:9411/zipkin/
   endpoints:
     web:
       exposure:
